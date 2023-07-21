@@ -9,6 +9,7 @@ const Skill = ({ name, x, y }) => {
     initial={{x:0, y:0}}
     whileInView={{x:x, y:y}}
     transition={{duration:1.5}}
+    viewport={{once:true}}
     >
       {name}
     </motion.div>
@@ -32,11 +33,11 @@ const Skills = () => {
       <Skill name={"html"} x={"-25vw"} y={"-2vw"} />
       <Skill name={"JavaScript"} x={"20vw"} y={"6vw"} />
       <Skill name={"Reatjs"} x={"0vw"} y={"12vw"} />
-      <Skill name={"null"} x={"-20vw"} y={"-15vw"} />
-      <Skill name={"null"} x={"15vw"} y={"-12vw"} />
+      {/* <Skill name={"null"} x={"-20vw"} y={"-15vw"} />
+      <Skill name={"null"} x={"15vw"} y={"-12vw"} /> */}
       <Skill name={"Web design"} x={"32vw"} y={"-5vw"} />
       <Skill name={"figma"} x={"0vw"} y={"-20vw "} />
-      <Skill name={"null"} x={"-25vw"} y={"18vw"} />
+      {/* <Skill name={"null"} x={"-25vw"} y={"18vw"} /> */}
       <Skill name={"tailwind css"} x={"18vw"} y={"18vw "} />
       </div>
     </>
