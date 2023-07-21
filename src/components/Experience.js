@@ -17,13 +17,13 @@ const Details = ({ position, company, link, time, address, work }) => {
           <a
             href={link}
             target="_blank"
-            className="capitalize underline underline-offset-2 "
+            className="text-primary dark:text-primaryDark capitalize underline underline-offset-2 "
           >
             @{company}
           </a>
         </h3>
 
-        <span className="capitalize font-medium text-dark/50">{` ${time} | ${address}`}</span>
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">{` ${time} | ${address}`}</span>
         <p className="fontt-medium w-full ">{work}</p>
       </motion.div>
     </li>
@@ -47,7 +47,7 @@ const Experience = () => {
           style={{
             scaleY: scrollYProgress,
           }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 ">
           <Details

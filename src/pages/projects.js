@@ -13,8 +13,8 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-dark p-12 relative rounded-br-2xl">
-                <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl"/>
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-dark dark:shadow-light p-12 relative rounded-br-2xl">
+                <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl"/>
       <Link
         href={link}
         target="_blank"
@@ -27,23 +27,23 @@ const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 ">
-        <span className="text-dark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">{title}</h2>
         </Link>
-        <p className="my-2 font-medium text-dark ">{summary}</p>
-        <div className="mt-2 flex items-center">
+        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
+        <div className="mt-2 flex items-center ">
           <Link href={githubLink} target="_blank" className="w-10">
             <GithubIcon />
           </Link>
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+            className="ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold"
           >
             Live
           </Link>
@@ -55,8 +55,8 @@ const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
 
 const Project = ({title, type, img, link, githubLink}) =>{
     return(
-        <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative ">
-        <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl"/>
+        <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark dark:border-light bg-light dark:bg-dark p-6 relative ">
+        <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl"/>
                   <Link
         href={link}
         target="_blank"
@@ -68,20 +68,20 @@ const Project = ({title, type, img, link, githubLink}) =>{
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-dark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold dark:text-light">{title}</h2>
         </Link>
         <div className="mt-2 flex items-center justify-between w-full ">
 
           <Link
             href={link}
             target="_blank"
-            className="text-lg font-semibold underline"
+            className="text-lg font-semibold underline dark:text-light"
           >
             Live
           </Link>
@@ -101,7 +101,7 @@ const projects = () => {
         <title>Raj Verma | About page</title>
         <meta content="Explore Raj Verma's Portfolio Projects. Each project exemplifies My Web Development Skills, creativity, and dedication to delivering high-quality work. Discover a diverse range of projects, including [Reacct projects Pure html css js projects and many  more. Get inspired and see how I can bring your ideas to life." />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16 " />
 
