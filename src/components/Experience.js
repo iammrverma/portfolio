@@ -2,15 +2,17 @@ import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 import LiIcon from "./LiIcon";
 const Details = ({ position, company, link, time, address, work }) => {
-    const ref = useRef(null);
+  const ref = useRef(null);
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex felx-col items-center justify-between">
-
-    <LiIcon reference={ref}/>
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex felx-col items-center justify-between"
+    >
+      <LiIcon reference={ref} />
       <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration:0.5, type:"spring"}}
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl ">
           {position}&nbsp;

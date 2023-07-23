@@ -39,7 +39,7 @@ const MovingImg = ({ title, img, link }) => {
       </h2>
       <FramerImage
         style={{ x: x, y: y }}
-        initial={{opacity:0}}
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
         ref={imgRef}
         src={img}
@@ -52,13 +52,16 @@ const MovingImg = ({ title, img, link }) => {
 
 const Article = ({ img, title, date, link }) => {
   return (
-    <motion.li 
-    initial={{y:200}}
-    whileInView={{y:0, transition:{duration:0.5, ease:"easeInOut"}}}
-    viewport={{once:true}}
-    className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light dark:bg-dark text-dark dark:text-light first:mt-0 border border-solid border-dark dark:border-light border-r-4 border-b-4">
+    <motion.li
+      initial={{ y: 200 }}
+      whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
+      viewport={{ once: true }}
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light dark:bg-dark text-dark dark:text-light first:mt-0 border border-solid border-dark dark:border-light border-r-4 border-b-4"
+    >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary dark:text-primaryDark font-semibold pl-4 ">{date}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4 ">
+        {date}
+      </span>
     </motion.li>
   );
 };
@@ -78,6 +81,8 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
       <Link href={link} target="_blank">
@@ -86,7 +91,9 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         </h2>
       </Link>
       <p className="text-sm mb-2 dark:text-light">{summary}</p>
-      <span className="text-primary dark:text-primaryDark font-semibold ">{time}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold ">
+        {time}
+      </span>
     </li>
   );
 };
