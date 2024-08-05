@@ -70,4 +70,17 @@ export const projectsData = [
     githubLink: "https://github.com/iammrverma/Petersen",
     skills: ["Python", "Matplotlib", "Networkx"],
   },
+  {
+    title: "Task Manager",
+    summary:
+      "TaskTracker is a simple and intuitive task manager application built using HTML, CSS, JavaScript, React, and Bootstrap. It allows users to easily add, manage, and track their tasks in a hassle-free manner.",
+    link: "https://iammrverma-tasktracker.netlify.app/",
+    images: [
+      require("./images/projects/taskmanager/img1.png").default,
+      require("./images/projects/taskmanager/img2.png").default,
+      require("./images/projects/taskmanager/img3.png").default,
+    ],
+    githubLink: "https://github.com/iammrverma/Task-Tracker",
+    skills: ["React Js", "Html", "Css"],
+  },
 ];
