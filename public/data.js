@@ -16,16 +16,32 @@ export const aboutData = {
 
   workDetails: [
     {
+      position: "Sr. It Executive",
+      company: "3T Logistics",
+      link: "https://3tl.in",
+      time: "June' 24-Present",
+      address: "Rajiv Nagar Sector 13, 122001 India",
+      work: "Build several custom solutions, worked with seo and development team",
+    },
+
+    {
       position: "Frontend-developer | Intern",
       company: "webmistry",
       link: "https://askwebmistry.com",
-      time: "June' 23-Present",
+      time: "June' 23 - July' 23",
       address: "Krishna Colony Palwal, 121102 India",
       work: "Work as a junior Front-end developer and help the company to convert their designs into code, worked under a creative team and enhance their design by my design thinking and effective implementations completely Designed and developed their landing page in a user centric way.",
     },
   ],
 
   educationDetails: [
+    {
+      type: "Masters Of Computer Applications",
+      time: "2024 - Present",
+      place: "Amity Online University",
+      info: "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, Web Technologies.",
+    },
+
     {
       type: "Bachelors Of Computer Applications",
       time: "2021 - 2024",
@@ -44,6 +60,30 @@ export const aboutData = {
 };
 
 export const projectsData = [
+  {
+    title: "Airbnb",
+    summary:
+      "The platform allows users to search for and book properties, similar to Airbnb, with features like property listings, user authentication, comments and ratings",
+    link: "https://airbnb-3m2g.onrender.com/listings",
+    images: [
+      require("./images/projects/airbnb/img1.png").default,
+      require("./images/projects/airbnb/img2.png").default,
+      require("./images/projects/airbnb/img3.png").default,
+    ],
+    githubLink: "https://github.com/iammrverma/Airbnb",
+    skills: ["Mongo Db", "Node Js", "Express Js"],
+  },
+  {
+    title: "Insights On Accounts",
+    summary:
+      "Full-stack web application with role-based access control, designed to streamline operations for the accounts team, finance team, and CFO. Implemented separate interfaces for each department to manage daily entries, while providing the CFO with a consolidated, analytical dashboard to generate custom insights from departmental data.",
+    images: [
+      require("./images/projects/ioa/img1.png").default,
+      require("./images/projects/ioa/img2.png").default,
+    ],
+    githubLink: "https://github.com/iammrverma/demoMatched",
+    skills: ["Sql", "Node Js", "Express Js", "Bootstrap"],
+  },
   {
     title: "Task Manager",
     summary:
@@ -69,18 +109,5 @@ export const projectsData = [
     ],
     githubLink: "https://github.com/iammrverma/Petersen",
     skills: ["Python", "Matplotlib", "Networkx"],
-  },
-  {
-    title: "Task Manager",
-    summary:
-      "TaskTracker is a simple and intuitive task manager application built using HTML, CSS, JavaScript, React, and Bootstrap. It allows users to easily add, manage, and track their tasks in a hassle-free manner.",
-    link: "https://iammrverma-tasktracker.netlify.app/",
-    images: [
-      require("./images/projects/taskmanager/img1.png").default,
-      require("./images/projects/taskmanager/img2.png").default,
-      require("./images/projects/taskmanager/img3.png").default,
-    ],
-    githubLink: "https://github.com/iammrverma/Task-Tracker",
-    skills: ["React Js", "Html", "Css"],
   },
 ];
