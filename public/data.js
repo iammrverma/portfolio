@@ -61,19 +61,6 @@ export const aboutData = {
 
 export const projectsData = [
   {
-    title: "Insights On Accounts",
-    summary:
-      "Full-stack web application with role-based access control, designed to streamline operations for the accounts team, finance team, and CFO. Implemented separate interfaces for each department to manage daily entries, while providing the CFO with a consolidated, analytical dashboard to generate custom insights from departmental data.",
-    images: [
-      require("./images/projects/ioa/img1.png").default,
-      require("./images/projects/ioa/img2.png").default,
-      require("./images/projects/ioa/img3.png").default,
-      require("./images/projects/ioa/img4.png").default,
-    ],
-    githubLink: "https://github.com/iammrverma/demoMatched",
-    skills: ["Sql", "Node Js", "Express Js", "Bootstrap"],
-  },
-  {
     title: "Airbnb",
     summary:
       "The platform allows users to search for and book properties, similar to Airbnb, with features like property listings, user authentication, comments and ratings",
@@ -85,6 +72,17 @@ export const projectsData = [
     ],
     githubLink: "https://github.com/iammrverma/Airbnb",
     skills: ["Mongo Db", "Node Js", "Express Js"],
+  },
+  {
+    title: "Insights On Accounts",
+    summary:
+      "Full-stack web application with role-based access control, designed to streamline operations for the accounts team, finance team, and CFO. Implemented separate interfaces for each department to manage daily entries, while providing the CFO with a consolidated, analytical dashboard to generate custom insights from departmental data.",
+    images: [
+      require("./images/projects/ioa/img1.png").default,
+      require("./images/projects/ioa/img2.png").default,
+    ],
+    githubLink: "https://github.com/iammrverma/demoMatched",
+    skills: ["Sql", "Node Js", "Express Js", "Bootstrap"],
   },
   {
     title: "Task Manager",
