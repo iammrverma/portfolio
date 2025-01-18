@@ -1,13 +1,13 @@
 export const aboutData = {
   metaDescription:
-    "Welcome to Raj Verma's Portfolio! I am a passionate Front-end Developer with a strong focus on Designing simple yet effective website. Explore my diverse projects and works that showcase my skills in reactjs, tailwind css amd figma. I believe in creativity, innovation, and user-centric design. Let's connect and collaborate on exciting projects.",
+    "Welcome to Raj Verma's Portfolio! I am a passionate Front-end Developer with a strong focus on designing simple yet effective websites. Explore my diverse projects and works that showcase my skills in React.js, Tailwind CSS, and Figma. I believe in creativity, innovation, and user-centric design. Let's connect and collaborate on exciting projects.",
 
   quote: "Passion Fuels Purpose!",
 
   bio: [
     "Hi, I'm Raj Verma, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. I am always looking for new and innovative ways to bring my clients' visions to life.",
-    "I believe that design is about more than just making things look pretty, it's about solving problems and creating intuitive, enjoyable experiences for users.",
-    "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.",
+    "I believe that design is about more than just making things look pretty. It's about solving problems and creating intuitive, enjoyable experiences for users.",
+    "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project."
   ],
 
   satisfiedClients: 3,
@@ -16,98 +16,103 @@ export const aboutData = {
 
   workDetails: [
     {
-      position: "Sr. It Executive",
+      position: "Sr. IT Executive",
       company: "3T Logistics",
       link: "https://3tl.in",
-      time: "June' 24-Present",
-      address: "Rajiv Nagar Sector 13, 122001 India",
-      work: "Build several custom solutions, worked with seo and development team",
+      time: "June 2024 - Present",
+      address: "Rajiv Nagar, Sector 13, 122001 India",
+      work: "Built several custom solutions and collaborated with the SEO and development team to enhance digital presence."
     },
 
     {
-      position: "Frontend-developer | Intern",
-      company: "webmistry",
+      position: "Frontend Developer | Intern",
+      company: "Webmistry",
       link: "https://askwebmistry.com",
-      time: "June' 23 - July' 23",
-      address: "Krishna Colony Palwal, 121102 India",
-      work: "Work as a junior Front-end developer and help the company to convert their designs into code, worked under a creative team and enhance their design by my design thinking and effective implementations completely Designed and developed their landing page in a user centric way.",
-    },
+      time: "June 2023 - July 2023",
+      address: "Krishna Colony, Palwal, 121102 India",
+      work: "Worked as a junior front-end developer, converting designs into code. Collaborated with a creative team to enhance designs through innovative thinking and effective implementation. Designed and developed a user-centric landing page for the company."
+    }
   ],
 
   educationDetails: [
     {
-      type: "Masters Of Computer Applications",
+      type: "Master of Computer Applications",
       time: "2024 - Present",
       place: "Amity Online University",
-      info: "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, Web Technologies.",
+      info: "Relevant courses include Data Structures and Algorithms, Computer Systems Engineering, and Web Technologies."
     },
 
     {
-      type: "Bachelors Of Computer Applications",
+      type: "Bachelor of Computer Applications",
       time: "2021 - 2024",
-      place: "70A, Delhi-Jaipur Expy, Block A, Sector 34, Gurugram, Haryana",
-      info: "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, Web Technologies.",
-    },
-
-    {
-      type: "Intermediate",
-      grade: "90%", //passing this grade here is totaly optional
-      time: "2021",
-      place: "Bhim Nagar 122001, Gurugram, Haryana",
-      info: "Basic Subjecs like Maths, Commerce, Accounts",
-    },
-  ],
+      place: "Gurugram, Haryana",
+      info: "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Web Technologies."
+    }
+  ]
 };
 
 export const projectsData = [
   {
+    title: "Rajvi",
+    summary:
+      "Modern website for a digital agency offering services such as web development, web design, video editing, graphics designing, and digital marketing.",
+    link: "https://iammrverma.github.io/Rajvi",
+    images: [
+      require("./images/projects/rajvi/img1.png").default,
+      require("./images/projects/rajvi/img2.png").default,
+      require("./images/projects/rajvi/img3.png").default
+    ],
+    githubLink: "https://github.com/iammrverma/Rajvi",
+    skills: ["React.js", "Hash Router", "MUI"]
+  },
+  {
     title: "Airbnb",
     summary:
-      "The platform allows users to search for and book properties, similar to Airbnb, with features like property listings, user authentication, comments and ratings",
+      "Platform allowing users to search for and book properties, featuring property listings, user authentication, comments, and ratings, similar to Airbnb.",
     link: "https://airbnb-3m2g.onrender.com/listings",
     images: [
       require("./images/projects/airbnb/img1.png").default,
       require("./images/projects/airbnb/img2.png").default,
-      require("./images/projects/airbnb/img3.png").default,
+      require("./images/projects/airbnb/img3.png").default
     ],
     githubLink: "https://github.com/iammrverma/Airbnb",
-    skills: ["Mongo Db", "Node Js", "Express Js"],
+    skills: ["MongoDB", "Node.js", "Express.js"]
   },
   {
     title: "Insights On Accounts",
     summary:
-      "Full-stack web application with role-based access control, designed to streamline operations for the accounts team, finance team, and CFO. Implemented separate interfaces for each department to manage daily entries, while providing the CFO with a consolidated, analytical dashboard to generate custom insights from departmental data.",
+      "Full-stack web application with role-based access control, designed to streamline operations for the accounts team, finance team, and CFO. Features separate interfaces for managing daily entries and a consolidated analytical dashboard for the CFO to generate custom insights.",
     images: [
       require("./images/projects/ioa/img1.png").default,
-      require("./images/projects/ioa/img2.png").default,
+      require("./images/projects/ioa/img2.png").default
     ],
     githubLink: "https://github.com/iammrverma/demoMatched",
-    skills: ["Sql", "Node Js", "Express Js", "Bootstrap"],
+    skills: ["SQL", "Node.js", "Express.js", "Bootstrap"]
   },
   {
     title: "Task Manager",
     summary:
-      "TaskTracker is a simple and intuitive task manager application built using HTML, CSS, JavaScript, React, and Bootstrap. It allows users to easily add, manage, and track their tasks in a hassle-free manner.",
+      "TaskTracker is a simple and intuitive task manager application built using HTML, CSS, JavaScript, React, and Bootstrap. It allows users to easily add, manage, and track their tasks.",
     link: "https://iammrverma-tasktracker.netlify.app/",
     images: [
       require("./images/projects/taskmanager/img1.png").default,
       require("./images/projects/taskmanager/img2.png").default,
-      require("./images/projects/taskmanager/img3.png").default,
+      require("./images/projects/taskmanager/img3.png").default
     ],
     githubLink: "https://github.com/iammrverma/Task-Tracker",
-    skills: ["React Js", "Html", "Css"],
+    skills: ["React.js", "HTML", "CSS"]
   },
   {
-    title: "Python library",
+    title: "Python Library",
     summary:
-      "Worked in python library which focus on a custom graph called Petersen this library fall under graph libraries of python which is under development yet.",
+      "Developed a Python library focused on a custom graph called Petersen. This library is a part of Python's graph libraries and is currently under development.",
     images: [
       require("./images/projects/petersen/img1.png").default,
       require("./images/projects/petersen/img2.png").default,
       require("./images/projects/petersen/img3.png").default,
-      require("./images/projects/petersen/img4.png").default,
+      require("./images/projects/petersen/img4.png").default
     ],
     githubLink: "https://github.com/iammrverma/Petersen",
-    skills: ["Python", "Matplotlib", "Networkx"],
-  },
+    skills: ["Python", "Matplotlib", "NetworkX"]
+  }
 ];
