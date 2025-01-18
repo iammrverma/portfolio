@@ -45,7 +45,7 @@ export default function Home() {
               "
               >
                 <Link
-                  href="./resume.docx"
+                  href="./resume.pdf"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lf font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light
