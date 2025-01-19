@@ -90,6 +90,7 @@ const NavBar = () => {
           <CustomLink href="/about" title={"About"} className="mx-4" />
           <CustomLink href="/projects" title={"Projects"} className="mx-4" />
           {/* <CustomLink href="/articles" title={"Articles"} className="mx-4" /> */}
+          <CustomLink href="/saas" title={"SaaS"} className="mx-4" />
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
@@ -145,25 +146,19 @@ const NavBar = () => {
 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
         >
           <nav className="flex flex-col justify-center items-center">
-            <CustomMobileLink
-              href="/"
-              title={"Home"}
-              className=""
-              toggle={handleClick}
-            />
+            <CustomMobileLink href="/" title={"Home"} toggle={handleClick} />
             <CustomMobileLink
               href="/about"
               title={"About"}
-              className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
               title={"Projects"}
-              className=""
               toggle={handleClick}
             />
-            {/* <CustomLink href="/articles" title={"Articles"} className="mx-4" /> */}
+            {/* <CustomMobileLink href='/articles' title='Articles' toggle={handleClick}/> */}
+            <CustomMobileLink href="/saas" title="SaaS" toggle={handleClick} />
           </nav>
 
           <nav className="flex items-center justify-center flex-wrap mt-2">
